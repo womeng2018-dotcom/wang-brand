@@ -71,12 +71,13 @@
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+  <!-- Stylesheet (minified) -->
+  <link rel="stylesheet" href="style.min.css">
 
   <!-- Preload critical assets -->
-  <link rel="preload" href="style.css" as="style">
-  <link rel="preload" href="main.js" as="script">
+  <link rel="preload" href="style.min.css" as="style">
+  <link rel="preload" href="assets/profile-photo.jpg" as="image">
+  <link rel="preload" href="main.min.js" as="script">
 
 </head>
 <body>
@@ -911,7 +912,7 @@
           微信扫码联系
         </p>
         <div class="contact-qr">
-          <img src="assets/wechat-qr.jpg" alt="微信二维码" style="width:100%; height:auto; border-radius:12px;">
+          <img src="assets/wechat-qr.jpg" alt="微信二维码" loading="lazy" style="width:100%; height:auto; border-radius:12px;">
           </div>
         </div>
       </div>
@@ -957,7 +958,7 @@
 <!-- ============================================================
      SCRIPTS
      ============================================================ -->
-<script src="main.js"></script>
+<script src="main.min.js"></script>
 
 </body>
 </html>
